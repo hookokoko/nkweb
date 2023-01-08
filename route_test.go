@@ -84,7 +84,7 @@ func Test_addRoute_new(t *testing.T) {
 	testRoutes := []struct {
 		method  string
 		path    string
-		handler HandlerFunc
+		handler HandleFunc
 	}{
 		{
 			method: http.MethodGet,
@@ -236,7 +236,7 @@ func Test_findRoute_new(t *testing.T) {
 	testRoutes := []struct {
 		method  string
 		path    string
-		handler HandlerFunc
+		handler HandleFunc
 	}{
 		{
 			method: http.MethodGet,
@@ -571,7 +571,7 @@ func Test_Mini1(t *testing.T) {
 	testRoutes := []struct {
 		method  string
 		path    string
-		handler HandlerFunc
+		handler HandleFunc
 	}{
 		{
 			method: http.MethodGet,
@@ -725,7 +725,7 @@ func getTestRoute() *router {
 	testRoutes := []struct {
 		method  string
 		path    string
-		handler HandlerFunc
+		handler HandleFunc
 	}{
 		{
 			method: http.MethodGet,

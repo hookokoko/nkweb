@@ -18,7 +18,7 @@ type node struct {
 	starChild  *node
 	paramChild *node
 	regexChild *node
-	handler    HandlerFunc
+	handler    HandleFunc
 }
 
 type matchInfo struct {
@@ -32,7 +32,7 @@ func newRouter() *router {
 	}
 }
 
-func (r *router) addRoute(method string, path string, handler HandlerFunc) {
+func (r *router) addRoute(method string, path string, handler HandleFunc) {
 	if path == "" {
 		panic("path 为空字符串")
 	}

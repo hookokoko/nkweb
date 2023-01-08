@@ -1,3 +1,3 @@
 package nkweb
 
-type Middleware func(next HandlerFunc) HandlerFunc
+type Middleware func(next HandleFunc) HandleFunc
